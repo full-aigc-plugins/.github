@@ -10,8 +10,8 @@
 # 🎨 面向 AI Agent 的多平台 AIGC 内容生成插件生态
 
 [![Repos](https://img.shields.io/badge/Repos-13-blue?style=flat-square)](#)
-[![Plugins](https://img.shields.io/badge/Plugins-10-green?style=flat-square)](https://github.com/full-aigc-plugins/full-aigc-plugins)
-[![Hosts](https://img.shields.io/badge/Hosts-Codex%20·%20ZCode%20·%20Kimi-blue?style=flat-square)](https://github.com/full-aigc-plugins/full-aigc-plugins)
+[![Plugins](https://img.shields.io/badge/Plugins-10-green?style=flat-square)](https://github.com/partme-ai/full-aigc-plugins)
+[![Hosts](https://img.shields.io/badge/Hosts-Codex%20·%20ZCode%20·%20Kimi-blue?style=flat-square)](https://github.com/partme-ai/full-aigc-plugins)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange?style=flat-square)](LICENSE)
 
 </div>
@@ -53,20 +53,20 @@
 
 ## 🚀 快速开始
 
-插件市场清单由 [full-aigc-plugins/full-aigc-plugins](https://github.com/full-aigc-plugins/full-aigc-plugins) 统一发布：
+插件市场清单由 [partme-ai/full-aigc-plugins](https://github.com/partme-ai/full-aigc-plugins) 统一发布：
 
 ```bash
 # Codex
-codex plugin marketplace add full-aigc-plugins/full-aigc-plugins
+codex plugin marketplace add partme-ai/full-aigc-plugins
 codex plugin add blender-design@full-aigc-plugins   # 其余插件同理
 ```
 
 ```text
 # Kimi Code CLI
-/plugins marketplace https://raw.githubusercontent.com/full-aigc-plugins/full-aigc-plugins/main/kimi-marketplace.json
+/plugins marketplace https://raw.githubusercontent.com/partme-ai/full-aigc-plugins/main/kimi-marketplace.json
 ```
 
-> ZCode：设置 → 插件 → 添加插件市场，输入 `full-aigc-plugins/full-aigc-plugins`。
+> ZCode：设置 → 插件 → 添加插件市场，输入 `partme-ai/full-aigc-plugins`。
 
 ---
 
