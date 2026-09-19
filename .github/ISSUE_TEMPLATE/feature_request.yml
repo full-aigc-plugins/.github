@@ -1,0 +1,78 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement
+title: "[Feature] "
+labels: ["enhancement", "needs-review"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please describe it clearly so we can evaluate feasibility and design.
+
+  - type: input
+    id: title_short
+    attributes:
+      label: Short Title
+      placeholder: "e.g. Support SnapshotStore for S3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which area does this feature belong to?
+      options:
+        - Core DDD (Entity / Aggregate / DomainEvent)
+        - CQRS / Event Sourcing
+        - Repository / Persistence
+        - Spring Boot integration
+        - Tooling / Build / CI
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      placeholder: "What problem does this feature solve? What is the user pain?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      placeholder: |
+        Describe the proposed API, design, or behavior change.
+
+        ```rust
+        // Example API sketch (optional)
+        pub trait ...
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      placeholder: "What other approaches were considered and why is this preferred?"
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact & Compatibility
+      placeholder: |
+        - Is this a breaking change?
+        - Who benefits? (existing users / new users)
+        - Migration path if breaking
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      placeholder: "Links, references, examples, related issues"

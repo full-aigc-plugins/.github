@@ -1,0 +1,48 @@
+name: 💬 Discussion / RFC
+description: Propose a new idea, design, or contribution
+title: "[Discussion] "
+labels: ["discussion", "needs-review"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening a discussion! Please describe your proposal
+        clearly so the community can give meaningful feedback.
+
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: e.g. "Add Saga / ProcessManager support to cqrs-4-rust"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      placeholder: "Why is this needed? What problem does it solve?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      placeholder: "Describe the proposed API / design / change"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      placeholder: "What other approaches were considered and why is this preferred?"
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      placeholder: "Links, references, examples, screenshots"
