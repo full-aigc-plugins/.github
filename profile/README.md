@@ -37,12 +37,12 @@
 | 插件 | 仓库 | 版本 | 说明 |
 |------|------|:----:|------|
 | 🎬 **Maya 制作** | [maya-design-plugin](https://github.com/full-aigc-plugins/maya-design-plugin) | 0.1.2 | Maya 场景检查与可逆 Playblast，产出经核验的即梦链接 |
-| 🧱 **Blender 制作** | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) | 0.3.2 | Blender 场景的受控设计、审阅与导出（视觉里程碑 + 恢复检查点） |
+| 🧱 **Blender 制作** | [blender-design-plugin](https://github.com/full-aigc-plugins/blender-design-plugin) | 0.7.1 | Blender 场景的受控设计、审阅与导出（视觉里程碑 + 恢复检查点） |
 | 🎞️ **Comfy 生成** | [comfy-design-plugin](https://github.com/full-aigc-plugins/comfy-design-plugin) | 0.1.1 | Comfy Cloud 生成工作流（图像 / 视频 / 音频 / 3D） |
 | 🎨 **即梦画布** | [dreamina-canvas-plugin](https://github.com/full-aigc-plugins/dreamina-canvas-plugin) | 0.1.3 | 结构化 Dreamina 画布与时间线的构建和运行（带审批与恢复） |
 | 🖼️ **即梦设计** | [dreamina-design-plugin](https://github.com/full-aigc-plugins/dreamina-design-plugin) | 0.4.1 | 即梦图像与视频创作 |
 | 🏭 **图片工厂** | [image-factory-plugin](https://github.com/full-aigc-plugins/image-factory-plugin) | 0.1.3 | 图像的发现、批量生产与评估闭环 |
-| ✂️ **剪映剪辑** | [jianying-edit-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) | 0.12.0 | pyJianYingDraft 驱动的剪映草稿原生引擎 |
+| ✂️ **剪映剪辑** | [jianying-edit-plugin](https://github.com/full-aigc-plugins/jianying-edit-plugin) | 0.15.0 | pyJianYingDraft 驱动的剪映草稿原生引擎 |
 | 🎵 **MiniMax 设计** | [minimax-design-plugin](https://github.com/full-aigc-plugins/minimax-design-plugin) | 0.4.2 | MiniMax H3 视频生成（白模首尾帧锚定） |
 | 🎥 **视频工厂** | [video-factory-plugin](https://github.com/full-aigc-plugins/video-factory-plugin) | 0.1.2 | 视频的剪辑、合成、审校与校验 |
 | 🌋 **火山引擎设计** | [volcengine-design-plugin](https://github.com/full-aigc-plugins/volcengine-design-plugin) | 0.1.0 | 豆包 ASR/TTS 与图像、视频生成工作流 |
