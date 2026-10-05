@@ -21,8 +21,6 @@
 
 ## 生态导航
 
-按当前任务选择入口：技能提供可复用的知识与操作指引，插件连接工具与工作流。各项目可以独立使用，按需安装即可。
-
 | 方向 | 适用任务 | 目录与安装 | 组织 |
 | --- | --- | --- | --- |
 | Full Stack Skills | 软件开发、架构设计、测试与运维 | [PartMe.AI / full-stack-skills](https://github.com/partme-ai/full-stack-skills) | [full-stack-skills](https://github.com/full-stack-skills) |
