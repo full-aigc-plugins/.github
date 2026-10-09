@@ -1,0 +1,25 @@
+name: Partme Plugin Policy Self-Test
+
+on:
+  push:
+    paths:
+      - 'scripts/check_plugin_architecture.py'
+      - 'tests/test_plugin_architecture.py'
+      - 'docs/standards/partme-agent-plugin-architecture-rules-v1.md'
+      - '.github/workflows/partme-plugin-architecture.yml'
+      - '.github/workflows/partme-policy-selftest.yml'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  policy-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile policy checker
+        run: python3 -m py_compile scripts/check_plugin_architecture.py
+      - name: Test policy checker
+        run: python3 -m unittest discover -s tests -p 'test_plugin_architecture.py' -v
