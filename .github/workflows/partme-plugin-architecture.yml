@@ -1,0 +1,28 @@
+name: Partme Agent Plugin Architecture v1
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  static-architecture:
+    name: PAPR v1 static contract
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout calling plugin repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Checkout organization policy and checker
+        uses: actions/checkout@v4
+        with:
+          repository: full-aigc-plugins/.github
+          ref: main
+          path: .partme-policy
+          persist-credentials: false
+
+      - name: Check Partme Agent Plugin rules
+        run: python3 .partme-policy/scripts/check_plugin_architecture.py --repo .
