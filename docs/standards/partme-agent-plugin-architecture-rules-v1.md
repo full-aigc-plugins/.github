@@ -2,7 +2,7 @@
 
 - **Policy ID:** PAPR-001
 - **Status:** Active — Organization Architecture Policy (v1)
-- **Scope:** All non-archived `*-plugin` repositories in `full-aigc-plugins`; applicable to other Partme Agent Plugin projects by explicit adoption.
+- **Scope:** All active Agent Plugin repositories in both `full-aigc-plugins` and `full-stack-plugins` (primarily `*-plugin` repos). Standalone native engines, CLI programs, core libraries and archived repositories are outside the mandatory plugin gate unless explicitly opted in.
 - **Upstream:** [Agent Plugins Specification v1.0.0](https://agent-plugins.org/specification) and [Agent Skills Specification](https://agentskills.io/specification).
 - **Principle:** **Skill-first · Harness-optional · Reuse-before-build · Explicit-execution · One-state-owner**.
 
@@ -133,6 +133,6 @@ The **shared reusable workflow** [Partme Plugin Architecture CI](https://github.
 
 ## 5. Rollout and exceptions
 
-Apply to **active** `*-plugin` repositories; do not mutate archived repos or the upstream Fork/CLI repositories with plugin-only rules. The canonical policy is stored once, in the organization `.github` repository at `docs/standards/partme-agent-plugin-architecture-rules-v1.md`, and each repository `AGENTS.md` references the canonical URL.
+Apply to active `*-plugin` repositories in **both** `full-aigc-plugins` and `full-stack-plugins`; do not mutate archived repos or upstream Fork/CLI and engine repositories with plugin-only rules. Reuse the public GitHub Actions workflow across organizations, without duplicating the checker or normative policy. The canonical policy is stored once, at `full-aigc-plugins/.github/docs/standards/partme-agent-plugin-architecture-rules-v1.md`; the location does not restrict its scope to AIGC. Each participating repository's `AGENTS.md` references that same canonical URL. Standalone `full-stack-plugins/guardengine`, `codeguard`, `specguard`, `archguard`, `testguard`, `gitguard` and `flowguard` are **engine/CLI** repos, not Agent Plugin packages, and are excluded from the mandatory plugin-shaped CI. Their `*-plugin` wrappers are in scope.
 
 Existing domain-specific OpenSpec, CI and release scripts must be **preserved**. Fix static blocking problems rather than suppressing them. For a behavior-changing migration of execution logic, write an OpenSpec plan, prove host reachability and safety parity, and obtain the normal repository review before removal.
